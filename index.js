@@ -13,16 +13,21 @@ const words = [
 ];
 
 const messageGenerator = (mLength) => {
-    let message = "";
+    let message = [];
 
     for (let i = 0; i < mLength; i++) {
         const wordNum = Math.floor(Math.random() * words.length);
         if (!message.includes(words[wordNum])) {
-            message += words[wordNum] + " ";
+            message.push(words[wordNum]);
+        } else {
+            i--;
         }
     }
 
-    return message;
+    return message.join(" ");
 }
 
-console.log(messageGenerator(5));
+console.log(messageGenerator(4))
+console.log(messageGenerator(5).split(" ").length);
+
+export { messageGenerator };
