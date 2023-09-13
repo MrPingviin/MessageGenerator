@@ -27,7 +27,4 @@ const messageGenerator = (mLength) => {
     return message.join(" ");
 }
 
-console.log(messageGenerator(4))
-console.log(messageGenerator(5).split(" ").length);
-
 export { messageGenerator };
