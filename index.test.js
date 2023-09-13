@@ -26,19 +26,19 @@ describe("Tests the lenghts of the messageGenerator return values", () => {
 
 describe("Tests the word repetition of the messageGenerator return values", () => {
     
-    test("repeatChecker called with messageGenerator, given a 7 as word number in the sentence and an array of words with 12 item should return true", () => {
-        expect(repeatChecker(messageGenerator(7, words))).toEqual(true);
+    test("repeatChecker called with messageGenerator, given a 7 as word number in the sentence and an array of words with 12 item should return false", () => {
+        expect(repeatChecker(messageGenerator(7, words))).toEqual(false);
     })
 
-    test("repeatChecker called with messageGenerator, given a 10 as word number in the sentence and an array of words with 12 item should return true", () => {
-        expect(repeatChecker(messageGenerator(10, words))).toEqual(true);
+    test("repeatChecker called with messageGenerator, given a 10 as word number in the sentence and an array of words with 12 item should return false", () => {
+        expect(repeatChecker(messageGenerator(10, words))).toEqual(false);
     })
 
-    test("repeatChecker called with messageGenerator, given a 3 as word number in the sentence and an array of words with 12 item should return true", () => {
-        expect(repeatChecker(messageGenerator(3, words))).toEqual(true);
+    test("repeatChecker called with messageGenerator, given a 3 as word number in the sentence and an array of words with 12 item should return false", () => {
+        expect(repeatChecker(messageGenerator(3, words))).toEqual(false);
     })
 
-    test("repeatChecker called with messageGenerator, given a 5 as word number in the sentence and an array of words with 12 item should return true", () => {
-        expect(repeatChecker(messageGenerator(5, words))).toEqual(true);
+    test("repeatChecker called with messageGenerator, given a 5 as word number in the sentence and an array of words with 12 item should return false", () => {
+        expect(repeatChecker(messageGenerator(5, words))).toEqual(false);
     })
 })

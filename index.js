@@ -44,7 +44,11 @@ const messageGenerator = (mLength, wordArray) => {
 const repeatChecker = (sentence) => {
     const words = sentence.split(" ");
     const uniqueWords = new Set(words);
-    return words.length === uniqueWords.size;
+    if (words.length === uniqueWords.size) {
+        return false;
+    }
+
+    return true;
 }
 
 export { messageGenerator, words, repeatChecker };
